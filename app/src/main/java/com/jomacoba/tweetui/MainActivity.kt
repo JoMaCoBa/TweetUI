@@ -20,10 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TweetUITheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    TweetScreen(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
